@@ -3,14 +3,14 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+//import results from '../../.jest-test-results.json';
 import './tailwind.css';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Components/Button',
   component: Button,
-  decorators: [withTests({ results:results })],
+  //decorators: [withTests({ results:results })],
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',

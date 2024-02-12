@@ -2,15 +2,15 @@
   "name": "dev-components",
   "version": "0.1.0",
   "private": false,
-  "babel": {  
-    "presets": [  
+  "babel": {
+    "presets": [
       "@babel/preset-react",
-      "@babel/preset-react",
-      "@babel/preset-typescript"  
-    ] 
-  }, 
+      "@babel/preset-typescript"
+    ]
+  },
   "main": "dist/index",
   "dependencies": {
+    "@babel/cli": "^7.23.9",
     "@heroicons/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -19,7 +19,6 @@
     "@types/node": "^16.18.80",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "babel-cli": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -38,7 +37,7 @@
     "tailwind-refresh": "npx tailwindcss -i ./src/index.css -o ./src/App.css ./src/components/tailwind.css",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "delete-old": "del dist",
-    "publish:npm": "babel src/components -d dist --copy-files"
+    "publish:npm": "babel src/components --extensions \".js,.jsx,.ts,.tsx\" -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
