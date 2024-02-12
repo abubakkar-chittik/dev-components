@@ -1,7 +1,7 @@
 {
   "name": "dev-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "babel": {  
     "presets": [  
       "@babel/preset-react"   
