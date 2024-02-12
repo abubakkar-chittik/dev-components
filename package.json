@@ -9,7 +9,7 @@
       "@babel/preset-typescript"  
     ] 
   }, 
-  "main": "dist/index.tsx",
+  "main": "dist/index",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.17.0",
