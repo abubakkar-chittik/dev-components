@@ -1,31 +1,7 @@
 import React from 'react';
 import './tailwind.css';
+import { ButtonProps } from './interfaces';
 
-interface ButtonProps {
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * Button contents
-   */
-  label: any;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
-  disabled?:boolean;
-  textColor?:string;
-  hoverBg?:string;
-  style?:any;
-  autoFocus?:boolean;
-  className?:string
-
-}
-
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
   onClick,backgroundColor,label,textColor,hoverBg,disabled,style,autoFocus,className,
   ...props
