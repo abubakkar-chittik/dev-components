@@ -4,10 +4,12 @@
   "private": false,
   "babel": {  
     "presets": [  
-      "@babel/preset-react"   
+      "@babel/preset-react",
+      "@babel/preset-react",
+      "@babel/preset-typescript"  
     ] 
   }, 
-  "main": "dist/index.js",
+  "main": "dist/index.tsx",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.17.0",
