@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = exports.Primary = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _Button = require("./Button");
-var _solid = require("@heroicons/react/24/solid");
+var _solid = require("@heroicons/react/solid");
 require("./tailwind.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //import results from '../../.jest-test-results.json';
@@ -24,10 +24,10 @@ const meta = {
 var _default = exports.default = meta;
 const Primary = exports.Primary = {
   args: {
-    label: /*#__PURE__*/_react.default.createElement(_solid.XMarkIcon, {
+    label: /*#__PURE__*/_react.default.createElement(_solid.XIcon, {
       className: "w-6 h-6 stroke-2"
     }),
-    backgroundColor: "bg-[linear-gradient(170deg,_#FBFBFD,_#607d8b0d_27%,_#FBFBFD)]",
-    className: "flex items-center text-primary text-sm font-bold shadow rounded border-brdrbtn1 h-11 px-3 outline-none"
+    backgroundColor: "bg-gradient-to-t",
+    className: "text-bluegray600 flex items-center justify-center h-11 w-11 text-sm font-bold rounded bg-gradient-to-t from-brgrdbtn1 to-brgrdbtn2 border border-brdrbtn1 shadow"
   }
 };
