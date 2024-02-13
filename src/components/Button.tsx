@@ -10,8 +10,7 @@ export const Button = ({
   return (
     <button
     type="button"
-    className={["inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:w-auto sm:text-sm", 
-               `${backgroundColor}`,`${hoverBg}`,`${textColor}`,`${className}`].join(' ')}
+    className={[`${backgroundColor}`,`${hoverBg}`,`${textColor}`,`${className}`].join(' ')}
     {...props}
     disabled={disabled}
     onClick={onClick}

@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
-import { XMarkIcon } from '@heroicons/react/24/solid';
+import { XIcon } from '@heroicons/react/solid';
 import { withTests } from '@storybook/addon-jest';
 //import results from '../../.jest-test-results.json';
 import './tailwind.css';
@@ -22,9 +22,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: <XMarkIcon className="w-6 h-6 stroke-2" />,
-    backgroundColor: "bg-[linear-gradient(170deg,_#FBFBFD,_#607d8b0d_27%,_#FBFBFD)]",
-    className:"flex items-center text-primary text-sm font-bold shadow rounded border-brdrbtn1 h-11 px-3 outline-none"
+    label: <XIcon className="w-6 h-6 stroke-2" />,
+    backgroundColor: "bg-gradient-to-t",
+    className:"text-bluegray600 flex items-center justify-center h-11 w-11 text-sm font-bold rounded bg-gradient-to-t from-brgrdbtn1 to-brgrdbtn2 border border-brdrbtn1 shadow"
   }
 };
 
